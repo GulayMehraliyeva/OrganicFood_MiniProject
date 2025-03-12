@@ -72,6 +72,7 @@ body{
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
+
 label{
     font-weight: 400;
     color: #333333;
@@ -6784,7 +6785,7 @@ body.open-overlay #overlay{
 }
 .slider-opt03__layout01 .media{
     z-index: 10;
-    background-image: url('../images/home-03/slide-01.jpg');
+    /*background-image: url('../images/home-03/slide-01.jpg');*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

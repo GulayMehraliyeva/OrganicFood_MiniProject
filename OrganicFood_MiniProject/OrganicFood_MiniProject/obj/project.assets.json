@@ -4007,24 +4007,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gulaymm\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\gulay\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gulaymm\\Desktop\\MiniProject4\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj",
+      "projectUniqueName": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj",
       "projectName": "OrganicFood_MiniProject",
-      "projectPath": "C:\\Users\\gulaymm\\Desktop\\MiniProject4\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj",
-      "packagesPath": "C:\\Users\\gulaymm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gulaymm\\Desktop\\MiniProject4\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\obj\\",
+      "projectPath": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj",
+      "packagesPath": "C:\\Users\\gulay\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gulaymm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\gulay\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4096,7 +4091,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
