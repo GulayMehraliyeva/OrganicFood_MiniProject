@@ -51,6 +51,13 @@ namespace OrganicFood_MiniProject.Controllers
                 Img = specialSlider.Img,
             });
 
+            IEnumerable<Discount> discounts = await _context.Discounts.ToListAsync();
+            var discountVM = discounts.Select(discount => new DiscountVM
+            {
+                Name = discount.Name,
+                DiscountPercentage = discount.DiscountPercentage
+            });
+
 
             IEnumerable<Product> products = await _context.Products
                                                           .Include(m => m.Category)
@@ -110,6 +117,8 @@ namespace OrganicFood_MiniProject.Controllers
             };
 
 
+
+
             var homeVM = new HomeVM
             {
                 Sliders = sliderVM,
@@ -120,6 +129,7 @@ namespace OrganicFood_MiniProject.Controllers
                 Categories = categoryVM,
                 Advertisement = advertisementVM,
                 Promotion = promotionVM,
+                Discounts = discountVM,
             };
 
             return View(homeVM);
