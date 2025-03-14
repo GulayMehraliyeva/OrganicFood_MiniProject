@@ -2,7 +2,7 @@
 {
     public class FreshFruit : BaseEntity
     {
-        public string Img { get; set; }
+        public string Img {  get; set; }
         public string Title { get; set; }
     }
 }

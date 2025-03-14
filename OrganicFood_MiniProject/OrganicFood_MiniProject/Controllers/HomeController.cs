@@ -76,6 +76,7 @@ namespace OrganicFood_MiniProject.Controllers
                                   : product.Price
             });
 
+
             IEnumerable<Category> categories = await _context.Categories
                                                              .Include(c => c.Products)
                                                              .ThenInclude(p => p.ProductImages)
@@ -88,6 +89,27 @@ namespace OrganicFood_MiniProject.Controllers
                 Image = category.Image
             }).ToList();
 
+
+            Advertisement advertisement = await _context.Advertisements.FirstOrDefaultAsync();
+            var advertisementVM = new AdvertisementVM
+            {
+                BackgroundImage = advertisement.BackgroundImage,
+                FirstImage = advertisement.FirstImage,
+                SecondImage = advertisement.SecondImage,
+                ThirdImage = advertisement.ThirdImage,
+                FourthImage = advertisement.FourthImage
+            };
+
+
+            Promotion promotion = await _context.Promotions.FirstOrDefaultAsync();
+            var promotionVM = new PromotionVM
+            {
+                Image = promotion.Image,
+                Title = promotion.Title,
+                Description = promotion.Description,
+            };
+
+
             var homeVM = new HomeVM
             {
                 Sliders = sliderVM,
@@ -95,7 +117,9 @@ namespace OrganicFood_MiniProject.Controllers
                 FreshFruits = freshFruitVM,
                 SpecialSliders = specialSliderVM,
                 Products = productVM,
-                Categories = categoryVM
+                Categories = categoryVM,
+                Advertisement = advertisementVM,
+                Promotion = promotionVM,
             };
 
             return View(homeVM);

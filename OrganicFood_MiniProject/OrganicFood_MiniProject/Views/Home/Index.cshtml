@@ -56,11 +56,11 @@
                                             </a>
                                         </div>
                                         <div class="text-content">
-                                        <b class="first-line">Pomegranate</b>
-                                            <span class="second-line">Organic Heaven Made</span>
-                                            <span class="third-line">Easy Healthy, Happy Life</span>
+                                            <b class="first-line">@item.Name</b>
+                                            <span class="second-line">@item.Description</span>
+                                            
                                             <div class="product-detail">
-                                                <h4 class="product-name">@item.Name</h4>
+                                                <h4 class="product-name">@item.Category.Name</h4>
                                                 <div class="price price-contain">
                                                 @if (item.DiscountedPrice < item.Price && item.DiscountedPrice > 0)
                                                 {
@@ -182,32 +182,34 @@
 
         <!--Block 04: Banner Promotion 01 -->
         <div class="banner-promotion-01 xs-margin-top-50px sm-margin-top-11px">
-            <div class="biolife-banner promotion biolife-banner__promotion">
+            <div class="biolife-banner promotion biolife-banner__promotion" style="background-image: url('@Url.Content("~/assets/images/home-03/" + Model.Advertisement?.BackgroundImage)') !important;">
                 <div class="banner-contain">
                     <div class="media background-biolife-banner__promotion">
                         <div class="img-moving position-1">
-                            <img src="~/assets/images/home-03/img-moving-pst-1.png" width="149" height="139" alt="img msv">
+                            <img src="~/assets/images/home-03/@Model.Advertisement.FirstImage" width="149" height="139" alt="img msv">
                         </div>
                         <div class="img-moving position-2">
-                            <img src="~/assets/images/home-03/img-moving-pst-2.png" width="185" height="265" alt="img msv">
+                            <img src="~/assets/images/home-03/@Model.Advertisement.SecondImage" width="185" height="265" alt="img msv">
                         </div>
                         <div class="img-moving position-3">
-                            <img src="~/assets/images/home-03/img-moving-pst-3-cut.png" width="384" height="151" alt="img msv">
+                            <img src="~/assets/images/home-03/@Model.Advertisement.ThirdImage" width="384" height="151" alt="img msv">
                         </div>
                         <div class="img-moving position-4">
-                            <img src="~/assets/images/home-03/img-moving-pst-4.png" width="198" height="269" alt="img msv">
+                            <img src="~/assets/images/home-03/@Model.Advertisement.FourthImage" width="198" height="269" alt="img msv">
                         </div>
                     </div>
                     <div class="text-content">
-                        <div class="container text-wrap">
-                            <i class="first-line">Healthy Fruit juice</i>
-                            <span class="second-line">Vegetable Always fresh</span>
-                            <p class="third-line">Food Heaven Made Easy sounds like the name of an amazingly delicious food delivery service, but don't be fooled...</p>
+                        @foreach (var item in Model.Products.OrderByDescending(p => p.Id).Take(1)) {
+                        <div class="container text-wrap">                          
+                                <i class="first-line">@item.Category.Name</i>
+                            <span class="second-line">@item.Name</span>
+                            <p class="third-line">@item.Description</p>
                             <div class="product-detail">
-                                <p class="txt-price"><span>Only:</span>$8.00</p>
+                                <p class="txt-price"><span>Only:</span>@item.Price</p>
                                 <a href="#" class="btn add-to-cart-btn">add to cart</a>
                             </div>
                         </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -218,11 +220,11 @@
             <div class="biolife-banner promotion2 biolife-banner__promotion2">
                 <div class="banner-contain">
                     <div class="container">
-                        <div class="media"></div>
+                        <img src="~/assets/images/home-03/@Model.Promotion.Image" />
+
                         <div class="text-content">
-                            <b class="first-line">Food Heaven Made</b>
-                            <span class="second-line">Easy <i>Healthy, Happy Life</i></span>
-                            <p class="third-line">Food Heaven Made Easy sounds like the name of an amazingly delicious food delivery service, but don't be fooled. The blog is actually a compilation of recipes, cooking videos, and nutrition tips.</p>
+                            <b class="first-line">@Model.Promotion.Title</b>
+                            <p class="third-line">@Model.Promotion.Description</p>
                             <p class="buttons">
                                 <a href="#" class="btn btn-bold">Read More</a>
                                 <a href="#" class="btn btn-thin">View Menu Now</a>

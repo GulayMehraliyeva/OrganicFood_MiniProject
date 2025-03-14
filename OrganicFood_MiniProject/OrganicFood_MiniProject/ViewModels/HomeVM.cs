@@ -6,9 +6,11 @@ namespace OrganicFood_MiniProject.ViewModels
     {
         public List<SliderVM> Sliders { get; set; }
         public SliderImage SliderImage { get; set; }
-        public IEnumerable<FreshFruitVM> FreshFruits {  get; set; }
+        public IEnumerable<FreshFruitVM> FreshFruits { get; set; }
         public IEnumerable<SpecialSliderVM> SpecialSliders { get; set; }
         public IEnumerable<ProductVM> Products { get; set; }
         public IEnumerable<CategoryVM> Categories { get; set; }
+        public AdvertisementVM Advertisement { get; set; }
+        public PromotionVM Promotion { get; set; }
     }
 }
