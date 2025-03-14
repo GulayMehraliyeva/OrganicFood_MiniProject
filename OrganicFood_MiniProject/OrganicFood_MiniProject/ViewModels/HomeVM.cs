@@ -13,5 +13,6 @@ namespace OrganicFood_MiniProject.ViewModels
         public AdvertisementVM Advertisement { get; set; }
         public PromotionVM Promotion { get; set; }
         public IEnumerable<DiscountVM> Discounts { get; set; }
+        public IEnumerable<BrandVM> Brands { get; set; }
     }
 }

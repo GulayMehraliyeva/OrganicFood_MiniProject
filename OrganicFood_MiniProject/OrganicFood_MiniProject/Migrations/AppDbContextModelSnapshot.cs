@@ -54,6 +54,23 @@ namespace OrganicFood_MiniProject.Migrations
                     b.ToTable("Advertisements");
                 });
 
+            modelBuilder.Entity("OrganicFood_MiniProject.Models.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Logo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
             modelBuilder.Entity("OrganicFood_MiniProject.Models.Category", b =>
                 {
                     b.Property<int>("Id")

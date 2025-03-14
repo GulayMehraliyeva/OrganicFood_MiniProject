@@ -18,5 +18,6 @@ namespace OrganicFood_MiniProject.Data
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Advertisement> Advertisements { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Brand> Brands { get; set; }
     }
 }
