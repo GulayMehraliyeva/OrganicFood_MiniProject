@@ -125,6 +125,16 @@ namespace OrganicFood_MiniProject.Controllers
             });
 
 
+            IEnumerable<Blog> blogs = await _context.Blogs.ToListAsync();
+            var blogVM = blogs.Select(blog => new BlogVM
+            {
+                Title = blog.Title,
+                Description= blog.Description,
+                Image = blog.Image,
+                CreatedDate = blog.CreatedDate
+            });
+
+
             var homeVM = new HomeVM
             {
                 Sliders = sliderVM,
@@ -137,6 +147,7 @@ namespace OrganicFood_MiniProject.Controllers
                 Promotion = promotionVM,
                 Discounts = discountVM,
                 Brands = brandVM,
+                Blogs = blogVM,
             };
 
             return View(homeVM);
