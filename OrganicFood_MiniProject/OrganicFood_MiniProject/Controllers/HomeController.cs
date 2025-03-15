@@ -39,19 +39,6 @@ namespace OrganicFood_MiniProject.Controllers
             });
 
 
-            IEnumerable<SpecialSlider> specialSliders = await _context.SpecialSliders.ToListAsync();
-            var specialSliderVM = specialSliders.Select(specialSlider => new SpecialSliderVM
-            {
-                FirstText = specialSlider.FirstText,
-                SecondText = specialSlider.SecondText,
-                ThirdText = specialSlider.ThirdText,
-                Name = specialSlider.Name,
-                Price = specialSlider.Price,
-                DiscountedPrice = specialSlider.DiscountedPrice,
-                Img = specialSlider.Img,
-            });
-
-
             IEnumerable<Product> products = await _context.Products
                                                           .Include(m => m.Category)
                                                           .Include(m => m.ProductImages)
@@ -140,7 +127,6 @@ namespace OrganicFood_MiniProject.Controllers
                 Sliders = sliderVM,
                 SliderImage = image,
                 FreshFruits = freshFruitVM,
-                SpecialSliders = specialSliderVM,
                 Products = productVM,
                 Categories = categoryVM,
                 Advertisement = advertisementVM,

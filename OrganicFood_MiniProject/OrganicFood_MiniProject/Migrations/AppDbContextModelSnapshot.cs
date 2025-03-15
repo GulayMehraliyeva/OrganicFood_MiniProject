@@ -310,45 +310,6 @@ namespace OrganicFood_MiniProject.Migrations
                     b.ToTable("SliderImages");
                 });
 
-            modelBuilder.Entity("OrganicFood_MiniProject.Models.SpecialSlider", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("DiscountedPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("FirstText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Img")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("SecondText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ThirdText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SpecialSliders");
-                });
-
             modelBuilder.Entity("OrganicFood_MiniProject.Models.Product", b =>
                 {
                     b.HasOne("OrganicFood_MiniProject.Models.Category", "Category")

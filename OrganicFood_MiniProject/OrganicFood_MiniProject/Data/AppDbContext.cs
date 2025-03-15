@@ -10,7 +10,6 @@ namespace OrganicFood_MiniProject.Data
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<SliderImage> SliderImages { get; set; }
         public DbSet<FreshFruit> FreshFruits { get; set; }
-        public DbSet<SpecialSlider> SpecialSliders { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<Category> Categories { get; set; }

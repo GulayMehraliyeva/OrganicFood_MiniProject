@@ -3,7 +3,7 @@
 <div class="container">
     <div class="card-body">
         <h4 class="card-title">Slider</h4>
-        <a asp-area="Admin" asp-controller="SliderInfo" asp-action="Create" class="btn btn-success">Create</a>
+        <a asp-area="Admin" asp-controller="Slider" asp-action="Create" class="btn btn-success">Create</a>
 
         <div class="table-responsive">
             <table class="table">
@@ -30,7 +30,7 @@
                                 <p>@item.Description</p>
                             </td>
                              <td>
-                                <img src="~/assets/images/home-03/@item.Image" style="width:400px; height:200px;" />
+                                <img src="~/assets/images/home-03/@item.Image" style="width:200px; height:100px;" />
                             </td>
                             <td>
                                 <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-primary">Detail</a>
