@@ -5233,6 +5233,10 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfontd41d.eot"
     },
     {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\26c99000-e10e-4b8a-93fb-981e79e08fa0.png",
+      "PackagePath": "staticwebassets\\assets\\images\\26c99000-e10e-4b8a-93fb-981e79e08fa0.png"
+    },
+    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\404-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\404-bg.jpg"
     },
@@ -5469,6 +5473,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\details-product\\thumb_p09.jpg"
     },
     {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\eb7301d5-38a3-42d3-a6f0-3f8c52e5aa5c-img-moving-pst-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\eb7301d5-38a3-42d3-a6f0-3f8c52e5aa5c-img-moving-pst-1.png"
+    },
+    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\favicon.png",
       "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
     },
@@ -5479,6 +5487,10 @@
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\hero_bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\hero_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\3b93c78b-3f28-4c72-9aed-b5ada2be51e8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home-01\\3b93c78b-3f28-4c72-9aed-b5ada2be51e8.png"
     },
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\bg_bold-title.png",
@@ -5527,10 +5539,6 @@
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\bn_grid_06.png",
       "PackagePath": "staticwebassets\\assets\\images\\home-01\\bn_grid_06.png"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\brd-01.png",
-      "PackagePath": "staticwebassets\\assets\\images\\home-01\\brd-01.png"
     },
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\brd-02.png",
@@ -6123,10 +6131,6 @@
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\minicart\\pr-05.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\minicart\\pr-05.jpg"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\orange.png",
-      "PackagePath": "staticwebassets\\assets\\images\\orange.png"
     },
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\organic-2-footer.png",

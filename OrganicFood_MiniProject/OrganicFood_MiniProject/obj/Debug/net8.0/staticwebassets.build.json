@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ag3VS72i8Q5WnssLlUSmFD18M9EVf/GUqJBt1wuuY2Q=",
+  "Hash": "leizcOFw0Ri60sp6x4eDLPpyuTqOrlE9DIOGMT8upF8=",
   "Source": "OrganicFood_MiniProject",
   "BasePath": "_content/OrganicFood_MiniProject",
   "Mode": "Default",
@@ -24888,6 +24888,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fontawesome-webfontd41d.eot"
     },
     {
+      "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\26c99000-e10e-4b8a-93fb-981e79e08fa0.png",
+      "SourceId": "OrganicFood_MiniProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\",
+      "BasePath": "_content/OrganicFood_MiniProject",
+      "RelativePath": "assets/images/26c99000-e10e-4b8a-93fb-981e79e08fa0.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\26c99000-e10e-4b8a-93fb-981e79e08fa0.png"
+    },
+    {
       "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\404-bg.jpg",
       "SourceId": "OrganicFood_MiniProject",
       "SourceType": "Discovered",
@@ -26009,6 +26028,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\details-product\\thumb_p09.jpg"
     },
     {
+      "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\eb7301d5-38a3-42d3-a6f0-3f8c52e5aa5c-img-moving-pst-1.png",
+      "SourceId": "OrganicFood_MiniProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\",
+      "BasePath": "_content/OrganicFood_MiniProject",
+      "RelativePath": "assets/images/eb7301d5-38a3-42d3-a6f0-3f8c52e5aa5c-img-moving-pst-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\eb7301d5-38a3-42d3-a6f0-3f8c52e5aa5c-img-moving-pst-1.png"
+    },
+    {
       "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\favicon.png",
       "SourceId": "OrganicFood_MiniProject",
       "SourceType": "Discovered",
@@ -26064,6 +26102,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\hero_bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\3b93c78b-3f28-4c72-9aed-b5ada2be51e8.png",
+      "SourceId": "OrganicFood_MiniProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\",
+      "BasePath": "_content/OrganicFood_MiniProject",
+      "RelativePath": "assets/images/home-01/3b93c78b-3f28-4c72-9aed-b5ada2be51e8.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home-01\\3b93c78b-3f28-4c72-9aed-b5ada2be51e8.png"
     },
     {
       "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\bg_bold-title.png",
@@ -26292,25 +26349,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\home-01\\bn-special-03-sample.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\brd-01.png",
-      "SourceId": "OrganicFood_MiniProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\",
-      "BasePath": "_content/OrganicFood_MiniProject",
-      "RelativePath": "assets/images/home-01/brd-01.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\home-01\\brd-01.png"
     },
     {
       "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-01\\brd-02.png",
@@ -29123,25 +29161,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\minicart\\pr-05.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\orange.png",
-      "SourceId": "OrganicFood_MiniProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\",
-      "BasePath": "_content/OrganicFood_MiniProject",
-      "RelativePath": "assets/images/orange.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\orange.png"
     },
     {
       "Identity": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\organic-2.png",

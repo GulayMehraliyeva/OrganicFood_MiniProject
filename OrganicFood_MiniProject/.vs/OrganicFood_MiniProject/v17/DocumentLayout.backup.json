@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|c:\\users\\gulay\\desktop\\miniprojects\\organicfood_miniproject\\organicfood_miniproject\\organicfood_miniproject\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|solutionrelative:organicfood_miniproject\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|c:\\users\\gulay\\desktop\\miniprojects\\organicfood_miniproject\\organicfood_miniproject\\organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|solutionrelative:organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|c:\\users\\gulay\\desktop\\miniprojects\\organicfood_miniproject\\organicfood_miniproject\\organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|solutionrelative:organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|c:\\users\\gulay\\desktop\\miniprojects\\organicfood_miniproject\\organicfood_miniproject\\organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|solutionrelative:organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|c:\\users\\gulay\\desktop\\miniprojects\\organicfood_miniproject\\organicfood_miniproject\\organicfood_miniproject\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|solutionrelative:organicfood_miniproject\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|c:\\users\\gulay\\desktop\\miniprojects\\organicfood_miniproject\\organicfood_miniproject\\organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogeditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ABEFEB7-95EA-4F41-8C79-11F305629F47}|OrganicFood_MiniProject\\OrganicFood_MiniProject.csproj|solutionrelative:organicfood_miniproject\\areas\\admin\\viewmodels\\blog\\blogeditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BrandController.cs",
-              "DocumentMoniker": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "RelativeDocumentMoniker": "OrganicFood_MiniProject\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "ToolTip": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "RelativeToolTip": "OrganicFood_MiniProject\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAswIQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Models\\Blog.cs",
+              "RelativeDocumentMoniker": "OrganicFood_MiniProject\\Models\\Blog.cs",
+              "ToolTip": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Models\\Blog.cs",
+              "RelativeToolTip": "OrganicFood_MiniProject\\Models\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T21:24:18.567Z",
+              "WhenOpened": "2025-03-16T00:00:26.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogDetailVM.cs",
+              "DocumentMoniker": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogDetailVM.cs",
+              "RelativeDocumentMoniker": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogDetailVM.cs",
+              "ToolTip": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogDetailVM.cs",
+              "RelativeToolTip": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogDetailVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T23:57:59.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogEditVM.cs",
+              "DocumentMoniker": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogEditVM.cs",
+              "RelativeDocumentMoniker": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogEditVM.cs",
+              "ToolTip": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogEditVM.cs",
+              "RelativeToolTip": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogEditVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T23:57:49.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlogCreateVM.cs",
+              "DocumentMoniker": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "RelativeDocumentMoniker": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "ToolTip": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "RelativeToolTip": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T23:57:31.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogVM.cs",
+              "DocumentMoniker": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogVM.cs",
+              "RelativeDocumentMoniker": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogVM.cs",
+              "ToolTip": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogVM.cs*",
+              "RelativeToolTip": "OrganicFood_MiniProject\\Areas\\Admin\\ViewModels\\Blog\\BlogVM.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T23:57:18.458Z",
               "EditorCaption": ""
             }
           ]
