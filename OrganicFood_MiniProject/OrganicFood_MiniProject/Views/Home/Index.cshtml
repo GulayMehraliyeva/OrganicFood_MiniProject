@@ -303,7 +303,7 @@
                                                 <b class="categories">@item.Category.Name</b>
                                                 <h4 class="product-title"><a href="#" class="pr-name">@item.Name</a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>@item.DiscountedPrice</span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>@item.DiscountedPrice.ToString("0.00")</span></ins>
                                                     <del><span class="price-amount"><span class="currencySymbol">£</span>@item.Price</span></del>
                                                 </div>
                                                 <div class="rating">

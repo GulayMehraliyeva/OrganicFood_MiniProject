@@ -12,8 +12,8 @@ using OrganicFood_MiniProject.Data;
 namespace OrganicFood_MiniProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250315060756_createdblogtable")]
-    partial class createdblogtable
+    [Migration("20250317232859_addedblogbannerblogcategorytables")]
+    partial class addedblogbannerblogcategorytables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,6 +58,31 @@ namespace OrganicFood_MiniProject.Migrations
                     b.ToTable("Advertisements");
                 });
 
+            modelBuilder.Entity("OrganicFood_MiniProject.Models.Banner", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Page")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Banners");
+                });
+
             modelBuilder.Entity("OrganicFood_MiniProject.Models.Blog", b =>
                 {
                     b.Property<int>("Id")
@@ -66,13 +91,8 @@ namespace OrganicFood_MiniProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("AuthorImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("BlogCategoryId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -91,7 +111,26 @@ namespace OrganicFood_MiniProject.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BlogCategoryId");
+
                     b.ToTable("Blogs");
+                });
+
+            modelBuilder.Entity("OrganicFood_MiniProject.Models.BlogCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BlogCategories");
                 });
 
             modelBuilder.Entity("OrganicFood_MiniProject.Models.Brand", b =>
@@ -321,43 +360,15 @@ namespace OrganicFood_MiniProject.Migrations
                     b.ToTable("SliderImages");
                 });
 
-            modelBuilder.Entity("OrganicFood_MiniProject.Models.SpecialSlider", b =>
+            modelBuilder.Entity("OrganicFood_MiniProject.Models.Blog", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("OrganicFood_MiniProject.Models.BlogCategory", "Category")
+                        .WithMany("Blogs")
+                        .HasForeignKey("BlogCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("DiscountedPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("FirstText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Img")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("SecondText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ThirdText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SpecialSliders");
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("OrganicFood_MiniProject.Models.Product", b =>
@@ -399,6 +410,11 @@ namespace OrganicFood_MiniProject.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("OrganicFood_MiniProject.Models.BlogCategory", b =>
+                {
+                    b.Navigation("Blogs");
                 });
 
             modelBuilder.Entity("OrganicFood_MiniProject.Models.Category", b =>

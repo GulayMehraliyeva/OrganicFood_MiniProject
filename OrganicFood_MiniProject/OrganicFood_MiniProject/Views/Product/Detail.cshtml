@@ -1,7 +1,16 @@
-﻿<!--Hero Section-->
-<div class="hero-section hero-background">
-    <h1 class="page-title">Organic Fruits</h1>
-</div>
+﻿@model ProductVM
+
+<!--Hero Section-->
+@{
+    var banner = Model.Banners.FirstOrDefault(b => b.Page == "Product");
+}
+
+@if (banner != null)
+{
+    <div class="hero-section hero-background" style="background-image: url('@Url.Content("~/assets/images/" + banner.Image)') !important;">
+        <h1 class="page-title">@banner.Name</h1>
+    </div>
+}
 
 <!--Navigation section-->
 <div class="container">
@@ -23,38 +32,49 @@
             <!-- summary info -->
             <div class="sumary-product single-layout">
                 <div class="media">
-                    <ul class="biolife-carousel slider-for" data-slick='{"arrows":false,"dots":false,"slidesMargin":30,"slidesToShow":1,"slidesToScroll":1,"fade":true,"asNavFor":".slider-nav"}'>
-                        <li><img src="~/assets/images/details-product/detail_01.jpg" alt="" width="500" height="500"></li>
-                        <li><img src="~/assets/images/details-product/detail_02.jpg" alt="" width="500" height="500"></li>
-                        <li><img src="~/assets/images/details-product/detail_03.jpg" alt="" width="500" height="500"></li>
-                        <li><img src="~/assets/images/details-product/detail_04.jpg" alt="" width="500" height="500"></li>
-                        <li><img src="~/assets/images/details-product/detail_05.jpg" alt="" width="500" height="500"></li>
-                        <li><img src="~/assets/images/details-product/detail_06.jpg" alt="" width="500" height="500"></li>
-                        <li><img src="~/assets/images/details-product/detail_07.jpg" alt="" width="500" height="500"></li>
+                    <!-- Main Image Slider -->
+                    <ul class="biolife-carousel slider-for"
+                        data-slick='{"arrows":false,"dots":false,"slidesMargin":30,"slidesToShow":1,"slidesToScroll":1,"fade":true,"asNavFor":".slider-nav"}'>
+                        @foreach (var item in Model.ProductImages)
+                        {
+                            <li>
+                                <img src="~/assets/images/products/@item.Name" alt="" width="500" height="500">
+                            </li>
+                        }
                     </ul>
-                    <ul class="biolife-carousel slider-nav" data-slick='{"arrows":false,"dots":false,"centerMode":false,"focusOnSelect":true,"slidesMargin":10,"slidesToShow":4,"slidesToScroll":1,"asNavFor":".slider-for"}'>
-                        <li><img src="~/assets/images/details-product/thumb_01.jpg" alt="" width="88" height="88"></li>
-                        <li><img src="~/assets/images/details-product/thumb_02.jpg" alt="" width="88" height="88"></li>
-                        <li><img src="~/assets/images/details-product/thumb_03.jpg" alt="" width="88" height="88"></li>
-                        <li><img src="~/assets/images/details-product/thumb_04.jpg" alt="" width="88" height="88"></li>
-                        <li><img src="~/assets/images/details-product/thumb_05.jpg" alt="" width="88" height="88"></li>
-                        <li><img src="~/assets/images/details-product/thumb_06.jpg" alt="" width="88" height="88"></li>
-                        <li><img src="~/assets/images/details-product/thumb_07.jpg" alt="" width="88" height="88"></li>
+
+                    <!-- Thumbnail Navigation Slider -->
+                    <ul class="biolife-carousel slider-nav"
+                        data-slick='{"arrows":false,"dots":false,"centerMode":true,"focusOnSelect":true,"slidesMargin":10,"slidesToShow":4,"slidesToScroll":1,"asNavFor":".slider-for"}'>
+                        @foreach (var item in Model.ProductImages)
+                        {
+                            <li>
+                                <img src="~/assets/images/products/@item.Name" alt="" width="88" height="88">
+                            </li>
+                        }
                     </ul>
                 </div>
+
                 <div class="product-attribute">
-                    <h3 class="title">Organic 10 Assorted Flavors Jelly Beans, 5.5 Oz</h3>
+                    <h3 class="title">@Model.Name</h3>
                     <div class="rating">
                         <p class="star-rating"><span class="width-80percent"></span></p>
                         <span class="review-count">(04 Reviews)</span>
                         <span class="qa-text">Q&A</span>
-                        <b class="category">By: Natural food</b>
+                        <b class="category">@Model.Category.Name</b>
                     </div>
                     <span class="sku">Sku: #76584HH</span>
-                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel maximus lacus. Duis ut mauris eget justo dictum tempus sed vel tellus.</p>
+                    <p class="excerpt">@Model.Description</p>
                     <div class="price">
-                        <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                        <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
+                        @if (Model.DiscountedPrice < Model.Price && Model.DiscountedPrice > 0)
+                        {
+                            <ins><span class="price-amount"><span class="currencySymbol">£</span>@Model.DiscountedPrice.ToString("0.00")</span></ins>
+                            <del><span class="price-amount"><span class="currencySymbol">£</span>@Model.Price.ToString("0.00")</span></del>
+                        }
+                        else
+                        {
+                            <ins><span class="price-amount"><span class="currencySymbol">£</span>@Model.Price</span></ins>
+                        }
                     </div>
                     <div class="product-atts">
                         <div class="atts-item">
@@ -135,11 +155,10 @@
                 <div class="tab-content">
                     <div id="tab_1st" class="tab-contain desc-tab active">
                         <p class="desc">
-                            Quisque quis ipsum venenatis, fermentum ante volutpat, ornare enim. Phasellus molestie risus non aliquet cursus. Integer vestibulum mi lorem, id hendrerit ante lobortis non. Nunc ante ante, lobortis non pretium non, vulputate vel nisi. Maecenas dolor elit, fringilla nec turpis ac, auctor vulputate nulla. Phasellus sed laoreet velit.
-                            Proin fringilla urna vel mattis euismod. Etiam sodales, massa non tincidunt iaculis, mauris libero scelerisque justo, ut rutrum lectus urna sit amet quam. Nulla maximus vestibulum mi vitae accumsan. Donec sit amet ligula et enim semper viverra a in arcu. Vestibulum enim ligula, varius sed enim vitae, posuere molestie velit. Morbi risus orci, congue in nulla at, sodales fermentum magna.
+                            @Model.Description
                         </p>
                         <div class="desc-expand">
-                            <span class="title">Organic Fresh Fruit</span>
+                            <span class="title">@Model.Category.Name</span>
                             <ul class="list">
                                 <li>100% real fruit ingredients</li>
                                 <li>100 fresh fruit bags individually wrapped</li>
@@ -383,190 +402,81 @@
             <div class="product-related-box single-layout">
                 <div class="biolife-title-box lg-margin-bottom-26px-im">
                     <span class="biolife-icon icon-organic"></span>
-                    <span class="subtitle">All the best item for You</span>
+                    <span class="subtitle">All the best items for You</span>
                     <h3 class="main-title">Related Products</h3>
                 </div>
-                <ul class="products-list biolife-carousel nav-center-02 nav-none-on-mobile" data-slick='{"rows":1,"arrows":true,"dots":false,"infinite":false,"speed":400,"slidesMargin":0,"slidesToShow":5, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 4}},{"breakpoint":992, "settings":{ "slidesToShow": 3, "slidesMargin":20 }},{"breakpoint":768, "settings":{ "slidesToShow": 2, "slidesMargin":10}}]}'>
+                <ul class="products-list biolife-carousel nav-center-02 nav-none-on-mobile"
+                    data-slick='{"rows":1,"arrows":true,"dots":false,"infinite":false,"speed":400,"slidesMargin":0,"slidesToShow":5, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 4}},{"breakpoint":992, "settings":{ "slidesToShow": 3, "slidesMargin":20 }},{"breakpoint":768, "settings":{ "slidesToShow": 2, "slidesMargin":10}}]}'>
 
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-13.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
+                    @foreach (var related in Model.RelatedProducts)
+                    {
+                        <li class="product-item">
+                            <div class="contain-product layout-default">
+                                <div class="product-thumb">
+                                    <a href="@Url.Action("Detail", "Product", new { id = related.Id })" class="link-to-product">
+                                        <img src="~/assets/images/products/@(related.ProductImages.FirstOrDefault()?.Name ?? "default.jpg")" alt="@related.Name" width="270" height="270" class="product-thumbnail">
+                                    </a>
                                 </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
+                                <div class="info">
+                                    <b class="categories">@related.Category.Name</b>
+                                    <h4 class="product-title">
+                                        <a href="@Url.Action("Detail", "Product", new { id = related.Id })" class="pr-name">@related.Name</a>
+                                    </h4>
+                                    <div class="price">
+                                        @if (related.DiscountedPrice < related.Price && related.DiscountedPrice > 0)
+                                        {
+                                            <ins><span class="price-amount"><span class="currencySymbol">£</span>@related.DiscountedPrice.ToString("0.00")</span></ins>
+                                            <del><span class="price-amount"><span class="currencySymbol">£</span>@related.Price.ToString("0.00")</span></del>
+                                        }
+                                        else
+                                        {
+                                            <ins><span class="price-amount"><span class="currencySymbol">£</span>@related.Price.ToString("0.00")</span></ins>
+                                        }
+                                    </div>
+                                    <div class="slide-down-box">
+                                        <p class="message">@related.Description</p>
+                                        <div class="buttons">
+                                            <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                            <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
+                                            <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-14.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
-                                </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-15.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
-                                </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-10.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
-                                </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-08.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
-                                </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-21.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
-                                </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product-item">
-                        <div class="contain-product layout-default">
-                            <div class="product-thumb">
-                                <a href="#" class="link-to-product">
-                                    <img src="~/assets/images/products/p-18.jpg" alt="dd" width="270" height="270" class="product-thumnail">
-                                </a>
-                            </div>
-                            <div class="info">
-                                <b class="categories">Fresh Fruit</b>
-                                <h4 class="product-title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
-                                <div class="price">
-                                    <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>
-                                    <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>
-                                </div>
-                                <div class="slide-down-box">
-                                    <p class="message">All products are carefully selected to ensure food safety.</p>
-                                    <div class="buttons">
-                                        <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                        <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
+                        </li>
+                    }
                 </ul>
             </div>
 
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const qtyInput = document.querySelector(".qty-input input");
+        const btnUp = document.querySelector(".btn-up");
+        const btnDown = document.querySelector(".btn-down");
+        const totalPriceElement = document.querySelector(".total-price-contain .price");
+        const unitPrice = @Model.DiscountedPrice > 0 ? @Model.DiscountedPrice : @Model.Price;
+
+        function updateTotalPrice() {
+            setTimeout(() => {
+                let quantity = parseInt(qtyInput.value);
+                if (isNaN(quantity) || quantity < 1) {
+                    quantity = 1;
+                    qtyInput.value = quantity; 
+                }
+                const totalPrice = (unitPrice * quantity).toFixed(2);
+                totalPriceElement.textContent = `£${totalPrice}`;
+            }, 10); 
+        }
+
+        btnUp.addEventListener("click", updateTotalPrice);
+        btnDown.addEventListener("click", updateTotalPrice);
+        qtyInput.addEventListener("input", updateTotalPrice);
+
+        updateTotalPrice();
+    });
+</script>
+

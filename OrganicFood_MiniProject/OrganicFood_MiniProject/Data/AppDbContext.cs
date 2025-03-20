@@ -19,5 +19,8 @@ namespace OrganicFood_MiniProject.Data
         public DbSet<Promotion> Promotions { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Blog> Blogs { get; set; }
-    }
+        public DbSet<BlogCategory> BlogCategories { get; set; }
+		public DbSet<Banner> Banners { get; set; }
+
+	}
 }

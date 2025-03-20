@@ -12,5 +12,7 @@ namespace OrganicFood_MiniProject.ViewModels
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public IEnumerable<ProductImageVM> ProductImages { get; set; }
+        public IEnumerable<BannerVM> Banners { get; set; }
+        public List<ProductVM> RelatedProducts { get; set; }
     }
 }
