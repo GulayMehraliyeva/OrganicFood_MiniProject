@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\gulay\Desktop\MiniProjects\OrganicFood_MiniProject\OrganicFood_MiniProject\OrganicFood_MiniProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Account/AddRoleToUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxBZGRSb2xlVG9Vc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Account/DeleteRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxEZWxldGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Advertisement/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0aXNlbWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -150,6 +162,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRnJlc2hGcnVpdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Promotion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvbW90aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -164,6 +192,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Promotion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvbW90aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Setting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2V0dGluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Setting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2V0dGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Areas/Admin/Views/Shared/_Layout.cshtml]
@@ -210,6 +246,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -222,8 +266,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/Product/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulay/Desktop/MiniProjects/OrganicFood_MiniProject/OrganicFood_MiniProject/OrganicFood_MiniProject/Views/_ViewImports.cshtml]

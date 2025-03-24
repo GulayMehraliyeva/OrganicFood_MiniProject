@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using OrganicFood_MiniProject.Data;
 using OrganicFood_MiniProject.Models;
 using OrganicFood_MiniProject.ViewModels;
@@ -11,10 +12,12 @@ namespace OrganicFood_MiniProject.Controllers
     public class HomeController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IHttpContextAccessor _accessor;
 
-        public HomeController(AppDbContext context)
+        public HomeController(AppDbContext context, IHttpContextAccessor accessor)
         {
             _context = context;
+            _accessor = accessor;
         }
 
         public async Task<IActionResult> Index()
@@ -139,6 +142,66 @@ namespace OrganicFood_MiniProject.Controllers
             return View(homeVM);
         }
 
+
+        public async Task<IActionResult> Search(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return View(new List<ProductVM>());
+            }
+
+            var products = await _context.Products
+                .Where(p => p.Name.Contains(s))
+                .Include(p => p.ProductImages)
+                .Include(p => p.ProductDiscounts)
+                .ThenInclude(pd => pd.Discount)
+                .ToListAsync();
+
+            var productVMs = products.Select(p => new ProductVM
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Price = p.Price,
+                DiscountedPrice = p.ProductDiscounts.Any()
+                    ? p.Price - (p.ProductDiscounts.Sum(pd => pd.Discount.DiscountPercentage) * p.Price / 100)
+                    : p.Price,
+                Description = p.Description,
+                ProductImages = p.ProductImages.Select(img => new ProductImageVM
+                {
+                    Name = img.Name,
+                    IsMain = img.IsMain
+                }).ToList(),
+                Category = p.Category
+            }).ToList();
+
+            return View(productVMs);
+        }
+
+
+        [HttpPost]
+        public IActionResult AddToCart(int id)
+        {
+            List<BasketVM> basketDatas = [];
+
+            if (_accessor.HttpContext.Request.Cookies["basket"] != null)
+            {
+                basketDatas = JsonConvert.DeserializeObject<List<BasketVM>>(_accessor.HttpContext.Request.Cookies["basket"]);
+            }
+
+            var existProduct = basketDatas.FirstOrDefault(m => m.ProductId == id);
+            if (existProduct != null)
+            {
+                existProduct.ProductCount++;
+            }
+            else
+            {
+                basketDatas.Add(new BasketVM { ProductId = id, ProductCount = 1 });
+            }
+
+            _accessor.HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketDatas), new CookieOptions { HttpOnly = true, Expires = DateTime.UtcNow.AddDays(7) });
+
+            return Ok();
+        }
     }
 }
            

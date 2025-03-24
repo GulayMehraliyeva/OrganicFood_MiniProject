@@ -5145,6 +5145,10 @@
       "PackagePath": "staticwebassets\\admin\\src\\partials\\_sidebar.html"
     },
     {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\css\\account.css",
+      "PackagePath": "staticwebassets\\assets\\css\\account.css"
+    },
+    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
     },
@@ -5689,10 +5693,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\home-02\\main-slide-03.jpg"
     },
     {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-03\\05091066-71f8-456d-8a0b-e46ec6813a8b-slomotion_02_bg.png",
-      "PackagePath": "staticwebassets\\assets\\images\\home-03\\05091066-71f8-456d-8a0b-e46ec6813a8b-slomotion_02_bg.png"
-    },
-    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-03\\1099be72-0d4d-4f1e-b5ef-52b4da0811ca-Screenshot 2025-03-10 190413.png",
       "PackagePath": "staticwebassets\\assets\\images\\home-03\\1099be72-0d4d-4f1e-b5ef-52b4da0811ca-Screenshot 2025-03-10 190413.png"
     },
@@ -5715,6 +5715,10 @@
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-03\\6d56d915-e964-4003-9c2f-31d4a3f89eea-img-moving-pst-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\home-03\\6d56d915-e964-4003-9c2f-31d4a3f89eea-img-moving-pst-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-03\\7bebbb05-019a-4cec-8a89-8b88b24c2e47.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home-03\\7bebbb05-019a-4cec-8a89-8b88b24c2e47.png"
     },
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\home-03\\b991d8cf-6485-4abf-8ba5-3d65e197108f.jpg",
@@ -6173,6 +6177,70 @@
       "PackagePath": "staticwebassets\\assets\\images\\our-blog\\post-thumb-wide-02.jpg"
     },
     {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\00f04dc9-b345-497a-8200-2abdc3c45dfb-green-slide-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\00f04dc9-b345-497a-8200-2abdc3c45dfb-green-slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\0d3609b1-af70-4152-acd7-2abcc5026716-green-slide-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\0d3609b1-af70-4152-acd7-2abcc5026716-green-slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\188bf4de-9929-41fc-9da2-fe4f6f470105-slomotion_02_bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\188bf4de-9929-41fc-9da2-fe4f6f470105-slomotion_02_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\1c97e188-11ce-4d9d-b9cc-52eed8a3a865-product_deal-02_330x330.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1c97e188-11ce-4d9d-b9cc-52eed8a3a865-product_deal-02_330x330.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\24d82424-a455-4c7e-921f-7c9da3b8710b-slide-01-child-01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\24d82424-a455-4c7e-921f-7c9da3b8710b-slide-01-child-01.png"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\3989b381-b186-43e9-a62b-72008d697356-bn_special_org.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3989b381-b186-43e9-a62b-72008d697356-bn_special_org.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\539b7666-0838-4ce6-973c-37e6136ba7fb-bn_special_org.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\539b7666-0838-4ce6-973c-37e6136ba7fb-bn_special_org.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\5c745e79-dda4-4c97-9739-c4b34446852a-green-slide-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5c745e79-dda4-4c97-9739-c4b34446852a-green-slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\7ca84264-3d24-4eb8-b150-cf0a8a2dce82-brd-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\7ca84264-3d24-4eb8-b150-cf0a8a2dce82-brd-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\84c92203-6f94-4248-9a90-db2e53dff503-biolife-banner__style-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\84c92203-6f94-4248-9a90-db2e53dff503-biolife-banner__style-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\9670e775-a8ae-4c83-b0cb-ace67bac0def-slomotion_02_bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\9670e775-a8ae-4c83-b0cb-ace67bac0def-slomotion_02_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\a41dab76-6651-47b0-8f2f-3055f858bab4-green-slide-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\a41dab76-6651-47b0-8f2f-3055f858bab4-green-slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\a74c9eb3-4635-4c5e-9a13-fa58e52f1f01-brd-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\a74c9eb3-4635-4c5e-9a13-fa58e52f1f01-brd-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\dca55681-9be8-494d-9823-5d9905900269-brd-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\dca55681-9be8-494d-9823-5d9905900269-brd-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\decf7097-485d-41b4-9e3f-6e11d5063c32-green-slide-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\decf7097-485d-41b4-9e3f-6e11d5063c32-green-slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\efb1ad9c-ddc9-4031-8936-b3e3b2a8df7e-brd-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\efb1ad9c-ddc9-4031-8936-b3e3b2a8df7e-brd-04.jpg"
+    },
+    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-01.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\products\\p-01.jpg"
     },
@@ -6209,40 +6277,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\products\\p-10.jpg"
     },
     {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-11.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-11.jpg"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-12.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-12.jpg"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-13.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-13.jpg"
-    },
-    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-14.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\products\\p-14.jpg"
     },
     {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-15.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-15.jpg"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-16.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-16.jpg"
-    },
-    {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-17.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\products\\p-17.jpg"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-18.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-18.jpg"
-    },
-    {
-      "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-19.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\products\\p-19.jpg"
     },
     {
       "Id": "C:\\Users\\gulay\\Desktop\\MiniProjects\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\OrganicFood_MiniProject\\wwwroot\\assets\\images\\products\\p-20.jpg",

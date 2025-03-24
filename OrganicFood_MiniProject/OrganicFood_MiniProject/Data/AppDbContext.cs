@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.General;
 using OrganicFood_MiniProject.Models;
 
 namespace OrganicFood_MiniProject.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> option) : base(option) { }
 
@@ -21,6 +23,7 @@ namespace OrganicFood_MiniProject.Data
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogCategory> BlogCategories { get; set; }
 		public DbSet<Banner> Banners { get; set; }
+		public DbSet<Setting> Settings { get; set; }
 
 	}
 }
